@@ -1,0 +1,93 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Railway Reservation Form</title>
+        </head>
+        <body>
+            <h1>Railway Reservation Form</h1>
+            <form action="process_reservation.php" method="post">
+                <label for="train_name">Train Name:</label>
+                <input type="text" id="train_name" name="train_name" required><br><br>
+        
+                <label for="departure_station">Departure Station:</label>
+                <input type="text" id="departure_station" name="departure_station" required><br><br>
+        
+                <label for="arrival_station">Arrival Station:</label>
+                <input type="text" id="arrival_station" name="arrival_station" required><br><br>
+        
+                <label for="departure_date">Departure Date:</label>
+                <input type="date" id="departure_date" name="departure_date" required><br><br>
+        
+                <label for="passenger_name">Passenger Name:</label>
+                <input type="text" id="passenger_name" name="passenger_name" required><br><br>
+        
+                <label for="passenger_age">Passenger Age:</label>
+                <input type="number" id="passenger_age" name="passenger_age" required><br><br>
+        
+                <label for="seat_type">Seat Type:</label>
+                <select id="seat_type" name="seat_type" required>
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first_class">First Class</option>
+                </select><br><br>
+                <label> 
+                    Gender :
+                    </label><br>
+                    <input type="radio" name="male"/> Male <br>
+                    <input type="radio" name="female"/> Female <br>
+                    <input type="radio" name="other"/> Other
+                    <br>
+                    <br>
+                    
+                    <label> 
+                    Phone :
+                    </label>
+                    <input type="text" name="country code"  value="+91" size="2"/> 
+                    <input type="text" name="phone" size="10"/> <br> <br>
+                    Address
+                    <br>
+                    <textarea cols="80" rows="5" value="address">
+                </textarea>
+                <label> 
+                    from :
+                    </label> 
+                    <select>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Kurla">Kurla</option>
+                    <option value="Solapur">Solapur</option>
+                    <option value="Sangli">Sangli</option>
+                    <option value="Kalyan">Kalyan</option>
+                    </select>
+                
+                    <label> 
+                        to :
+                        </label> 
+                        <select>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Thane">Thane</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Kurla">Kurla</option>
+                        <option value="Solapur">Solapur</option>
+                        <option value="Sangli">Sangli</option>
+                        <option value="Kalyan">Kalyan</option>
+                        </select>
+        
+                <label for="number_of_tickets">Number of Tickets:</label>
+                <input type="number" id="number_of_tickets" name="number_of_tickets" required><br><br>
+        
+                
+                <button id="redirectButton">submit</button>
+
+                <script>
+                    document.getElementById("redirectButton").addEventListener("click", function() {
+                        
+                        window.location.href = "su.html";
+                    });
+                </script>
+            </form>
+        </body>
+        </html>
+        
+    
