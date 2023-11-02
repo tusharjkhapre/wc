@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events Example</title>
+</head>
+<body>
+    <button id="myButton">Click me</button>
+
+    <div id="hoverElement">Hover over me</div>
+
+    <select id="mySelect">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+    </select>
+
+    <input id="myInput" type="text" placeholder="Press keys here">
+
+    <form id="myForm">
+        <input type="text" name="username" placeholder="Username">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            alert("Button was clicked!");
+        });
+
+        const hoverElement = document.getElementById("hoverElement");
+        hoverElement.addEventListener("mouseover", function() {
+            hoverElement.textContent = "Mouse over me!";
+        });
+
+        hoverElement.addEventListener("mouseout", function() {
+            hoverElement.textContent = "Hover over me";
+        });
+
+        document.getElementById("mySelect").addEventListener("change", function() {
+            alert("Selected option changed!");
+        });
+
+        const input = document.getElementById("myInput");
+        input.addEventListener("keydown", function() {
+            console.log("Keydown event triggered.");
+        });
+
+        input.addEventListener("keypress", function() {
+            console.log("Keypress event triggered.");
+        });
+
+
+        const form = document.getElementById("myForm");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            alert("Form submitted!");
+        });
+    </script>
+</body>
+</html>

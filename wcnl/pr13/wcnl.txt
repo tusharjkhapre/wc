@@ -1,0 +1,46 @@
+practical no.11
+
+router0 192.168.1.1           router0 192.168.2.1
+computer0:                    computer2:
+ipv4 192.168.1.2              ipv4 192.168.2.2
+subnet 255.255.255.0          subnet 255.255.255.0
+default 192.168.1.1           default 192.168.2.1
+
+computer1                     computer3:
+ipv4 192.168.1.3              ipv4 192.168.2.3
+subnet 255.255.255.0          subnet 255.255.255.0
+default 192.168.1.1           default 192.168.2.1
+
+
+
+
+practical no.12
+
+ipv4 10.0.0.1
+default 10.0.0.2
+dns same as ipv4
+then go to service and then go to dhcp on the service and add default,dns value and add the start ip address from 3
+ then go to computer go to desktop and in desktop io conf select dhcp it will automatically add the ip address same for other computer
+
+  
+
+
+practical 13
+server 
+ipv4 10.10.10.0
+then go to services
+select ftp
+write user name and password select all option of write read delete rename list
+click on add
+then close
+computer0:
+ipv4 10.10.10.1
+subnet 255.0.0.0
+default 10.10.10.0
+
+computer1:
+ipv4 10.10.10.2
+subnet 255.0.0.0
+default 10.10.10.0
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styling Example</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #ff5733;
+        }
+
+        /* Paragraph styles */
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* List styles */
+        ul {
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        /* Link styles */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Box model */
+        div {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* ID selector */
+        #header {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* Background styles */
+        section {
+            background-color: #f0f0f0;
+            background-image: url('background.jpg');
+            background-size: cover;
+        }
+
+        /* Transitions and animations */
+        button {
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #ff5733;
+        }
+
+        /* Media Queries for responsive design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            div {
+                width: 100px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+
+    <p>This is a paragraph with <a href="#">a link</a>. It can also contain <span class="highlight">highlighted</span> text.</p>
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+
+    <ol>
+        <li>Numbered item 1</li>
+        <li>Numbered item 2</li>
+        <li>Numbered item 3</li>
+    </ol>
+
+    <div>This is a box.</div>
+
+    <div class="highlight">This is a highlighted box.</div>
+
+    <div id="header">Header with ID</div>
+
+    <section>
+        This section has a background image.
+    </section>
+
+    <button>Hover Over Me</button>
+</body>
+</html>
